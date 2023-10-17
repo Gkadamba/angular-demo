@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sticky-header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: -100px; /* Hide the header initially */
+  transition: top 0.3s ease-in-out;
+}
+
+.content {
+  /* Add some space below the header so content isn't obscured */
+  margin-top: 100px;
+  height: 1500px;
+}

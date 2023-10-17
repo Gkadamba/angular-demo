@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sticky Header Example</title>
+  </head>
+  <body>
+    <header class="sticky-header">
+      <h1>My Sticky Header</h1>
+    </header>
+    <div class="content">
+      <!-- Your website content goes here -->
+    </div>
+
+    <script>
+      const header = document.querySelector(".sticky-header");
+
+      // Function to toggle the sticky behavior
+      function toggleStickyHeader() {
+        if (window.scrollY > 50) {
+          header.style.top = "0";
+        } else {
+          header.style.top = "-100px";
+        }
+      }
+
+      // Listen for scroll events and toggle the sticky behavior
+      window.addEventListener("scroll", toggleStickyHeader);
+    </script>
+  </body>
+</html>
